@@ -1,9 +1,19 @@
-﻿namespace NutriFlow;
+﻿using Microsoft.Maui.Controls;
 
-public partial class AppShell : Shell
+namespace NutriFlow
 {
-	public AppShell()
-	{
-		InitializeComponent();
-	}
+    public partial class AppShell : Shell
+    {
+        public AppShell()
+        {
+            InitializeComponent();
+            RegisterRoutes();
+        }
+
+        private void RegisterRoutes()
+        {
+            Routing.RegisterRoute(nameof(LoginPage), typeof(LoginPage));
+            // Add more routes here as needed
+        }
+    }
 }

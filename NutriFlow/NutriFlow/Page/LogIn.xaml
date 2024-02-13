@@ -1,0 +1,10 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NutriFlow.LoginPage">
+
+    <VerticalStackLayout Spacing="25" Padding="30">
+        <Entry x:Name="usernameEntry" Placeholder="Username/Email" />
+        <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="true" />
+        <Button Text="Log In" Clicked="OnLoginButtonClicked" />
+    </VerticalStackLayout>
+</ContentPage>
